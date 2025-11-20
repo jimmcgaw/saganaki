@@ -1,0 +1,10 @@
+services:
+  opa:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8181:8181"
+    volumes:
+      - ./policies:/app/policies
+    command: ["run", "--server", "--addr=0.0.0.0:8181", "/app/policies"]
