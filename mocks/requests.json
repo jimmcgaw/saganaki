@@ -1,0 +1,14 @@
+{
+  "auth_test_cases": {
+    "admin_request": {
+      "user": "alice",
+      "role": "admin",
+      "method": "POST"
+    },
+    "guest_request": {
+      "user": "bob",
+      "role": "guest",
+      "method": "GET"
+    }
+  }
+}

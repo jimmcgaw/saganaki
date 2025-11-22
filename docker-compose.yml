@@ -1,4 +1,10 @@
 services:
+  app:
+    build:
+      context: ./app
+    ports:
+      - "8000:8000"
+
   opa:
     build:
       context: .
